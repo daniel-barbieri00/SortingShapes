@@ -1,2 +1,0 @@
-module Lab_2_Comparable_and_Comparator_Interfaces {
-}
