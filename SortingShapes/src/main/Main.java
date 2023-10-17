@@ -1,4 +1,4 @@
-package SortingShapes;
+package main;
 
 public class Main {
 
