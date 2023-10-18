@@ -8,10 +8,10 @@ public class triangleBase extends shapeADT {
     }
 
     public double calculateArea(double l, double h) {
-        double baseArea = l * 2;
+        double baseArea = l * 2 * sqrt(3) * 4;
     }
 
     public double calculateVolume(double l, double h) {
-        double volume = l * 2 * h;
+        double volume = (l * 2 * sqrt(3) * 4) * h;
     }
 }
