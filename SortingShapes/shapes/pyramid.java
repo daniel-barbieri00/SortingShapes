@@ -1,9 +1,15 @@
+package SortingShapes.shapes;
+import java.util.*;
+import java.math.*;
+
 public class pyramid extends shapeADT {
+	String type;
     double height;
     double length;
 
-    public pyramid(double length, double height) {
-        this.height = height;
+    public pyramid(String type, double length, double height) {
+        this.type = type;
+    	this.height = height;
         this.length = length;
     }
 
