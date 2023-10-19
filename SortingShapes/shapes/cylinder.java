@@ -1,19 +1,25 @@
+package SortingShapes.shapes;
+import java.util.*;
+import java.math.*;
+
 public class cylinder extends shapeADT {
-    double height;
+    String type;
+	double height;
     double length;
 
-    public cylinder(double length, double height) {
-        this.height = height;
+    public cylinder(String type, double length, double height) {
+        this.type = type;
+    	this.height = height;
         this.length = length;
     }
 
     public double calculateArea(double l, double h) {
-        double area = pi * l * 2;
+        double area = 3.141592 * l * 2;
         return area;
     }
 
     public double calculateVolume(double l, double h) {
-        double volume = pi * l * 2 * h;
+        double volume = 3.141592 * l * 2 * h;
         return volume;
     }
 }
