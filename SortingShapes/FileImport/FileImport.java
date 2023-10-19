@@ -35,34 +35,20 @@ public class FileImport {
 					String names = values[i];
 					String v1 = values[i+1];
 					String v2 = values[i+2];
-					
-					if (names == "Cone") {
-						shapeADT Shape = new cone(names, Double.parseDouble(v1), Double.parseDouble(v2));
-						Shapes.add(Shape);
-					}
-					else if (names == "Cylinder") {
-						shapeADT Shape = new cylinder(names, Double.parseDouble(v1), Double.parseDouble(v2));
-						Shapes.add(Shape);
-					}
-					else if (names == "OctagonalPrism") {
-						shapeADT Shape = new octagonBase(names, Double.parseDouble(v1), Double.parseDouble(v2));
-						Shapes.add(Shape);
-					}
-					else if (names == "PentagonalPrism") {
-						shapeADT Shape = new pentagonBase(names, Double.parseDouble(v1), Double.parseDouble(v2));
-						Shapes.add(Shape);
-					}
-					else if (names == "Pyramid") {
-						shapeADT Shape = new pyramid(names, Double.parseDouble(v1), Double.parseDouble(v2));
-						Shapes.add(Shape);
-					}
-					else if (names == "SquarePrism") {
-						shapeADT Shape = new retangularPrism(names, Double.parseDouble(v1), Double.parseDouble(v2));
-						Shapes.add(Shape);
-					}
-					else if (names == "TriangularPrism") {
-						shapeADT Shape = new triangleBase(names, Double.parseDouble(v1), Double.parseDouble(v2));
-						Shapes.add(Shape);
+										
+					switch (names) {
+					case "Cone":
+						//Cone cone = new cone(names, v1, v2)
+					case "SquarePrism":
+						//Sqp sqp = new Sqp(names, v1, v2)
+					case "OctagonalPrism":
+						//Ocp ocp = new Ocp(names, v1, v2)
+					case "PentagonalPrism":
+						//Pep pep = new Pep(names, v1, v2)
+					case "Pyramid":
+						//Pyrimid pyramid = new Pyramid(names, v1, v2)
+					case "TriangularPrism":
+						//Trp trp = new Trp(names, v1, v2)
 					}
 ;					
 				}
